@@ -21,8 +21,7 @@ export default function CheckoutCorfirmation() {
         accountUser: dataTopup.verifyID,
       };
 
-      // console.log(data);
-  
+    
       const res = await setCheckout(data);
   
       if (res.error) {
