@@ -19,7 +19,6 @@ export default function CheckoutDetail() {
   useEffect(() => {
     const dataItemLocal=  localStorage.getItem('data-topup')
     const data= JSON.parse(dataItemLocal)
-    ("data-detail", data);
     setDataTopUp(data)
   },[])
   const totalPrice = (dataTopUp.nominalItem.price + (dataTopUp.nominalItem.price * (10/100))) 
